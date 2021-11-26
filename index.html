@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment16_Prime_number_or_not</title>
+  </head>
+  <body>                          
+    <script>
+     var numb=prompt("Enter a number to check it is Prime or Not");
+     if(numb == 1){
+         console.log( numb + " is not a prime number or composite number");
+     } else{
+         for(var i=2; i<numb; i++ ){
+             if(numb%i == 0){
+             var rslt= ( numb + " is not a prime number");
+             break;
+             }else{
+                 var rslt= (numb + " is a prime number");
+             }
+         }
+         console.log(rslt);
+     }
+    </script>
+  </body>
+</html>
